@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-09-11T05:09:40.313Z",
+  "sourceRows": 770611,
+  "rejected": 370546,
+  "existingEntries": 12954,
+  "fallbackEntries": 387284,
+  "filledPhonetics": 26,
+  "fallbackMissingPhonetics": 200580
+}

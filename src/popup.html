@@ -1,0 +1,7 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><link rel="stylesheet" href="ui.css"><title>指译</title></head>
+<body class="popup"><h1>指译 <small>完全离线</small></h1><p class="status">选中单词查本地词典；选中一段英文或日文，离线逐词翻译并组合。</p>
+<label><span>自动取词</span><select id="trigger"><option value="selection">选中后翻译</option><option value="manual">仅双击/快捷键</option></select></label>
+<label class="check"><input id="hoverTranslation" type="checkbox"> 鼠标停留 0.5 秒自动翻译</label>
+<label class="check"><input id="preloadOfflineResources" type="checkbox"> 网页空闲后预加载词典和整句模型</label>
+<label class="check"><input id="autoSpeak" type="checkbox"> 翻译后自动播放</label>
+<div class="popup-actions"><button id="openDocument">打开 PDF / Word</button><button id="options" class="secondary">更多设置</button></div><script src="popup.js"></script></body></html>

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>指译文档阅读器</title>
+  <link rel="stylesheet" href="reader.css">
+  <link rel="stylesheet" href="content.css">
+</head>
+<body>
+  <header class="reader-toolbar">
+    <div><strong>指译文档阅读器</strong><span id="fileName">尚未打开文档</span></div>
+    <div class="reader-actions">
+      <button id="boxSelect" class="toolbar-button" type="button" aria-pressed="false">框选翻译</button>
+      <label class="file-button">选择 PDF / Word<input id="fileInput" type="file" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></label>
+    </div>
+  </header>
+  <div id="status" class="reader-status">请选择本机 PDF 或 DOCX 文件。文档只在本机解析，不会上传。</div>
+  <main id="document" class="reader-document" aria-live="polite"></main>
+  <script src="../vendor/mammoth/mammoth.browser.min.js"></script>
+  <script type="module" src="reader.js"></script>
+  <script src="content.js"></script>
+</body>
+</html>

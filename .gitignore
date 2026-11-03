@@ -1,0 +1,61 @@
+# 本地临时源码、上游仓库及解包目录
+.tmp-*/
+.tmp-*
+
+# npm 下载包和其他构建输入压缩包
+*.tgz
+
+# 本项目生成的发布安装包
+zcjtranslate-v*.zip
+
+# Node.js 依赖和缓存（当前项目正常构建不需要提交）
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+
+# 测试、覆盖率和运行日志
+coverage/
+.nyc_output/
+test-results/
+playwright-report/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 临时文件和备份文件
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# Windows / macOS 系统文件
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+.DS_Store
+._*
+
+# IDE 和编辑器的个人设置
+.idea/
+.vscode/
+*.code-workspace
+
+# 本地环境变量和证书
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+
+# 注意：以下目录是离线扩展的运行必需项，不得忽略
+# data/
+# models/
+# vendor/
+# licenses/
